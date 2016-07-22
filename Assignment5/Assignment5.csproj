@@ -48,6 +48,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="bin\Debug\Assignment5.exe.config" />
+    <None Include="bin\Debug\Assignment5.vshost.exe.config" />
+    <None Include="bin\Debug\Assignment5.vshost.exe.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Assignment5.vshost.exe" />
+    <Content Include="grade.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
