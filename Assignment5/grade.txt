@@ -1,2 +1,3 @@
 ﻿Giubilini,Alberto,1 Science,A+
 Korsgaard,Christine,2 Arts,B- 
+Gyngell,Christopher.3 philosophy,A++ 

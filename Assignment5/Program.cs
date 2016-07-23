@@ -4,11 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
-
+/**
+ * author: shahzaib malik
+ * student id: 300852792
+ * course id: COMP123
+ * 
+*/
 namespace Assignment5
 {
+    /**
+ * main driver class of the program 
+ * @ properties firstname,lastname,idclass,grade
+ * @method main(string[]) args
+ */
     class Program
     {
+        // public properties
         public string firstname { get; set; }
         public string lastname { get; set; }
         public string idClass { get; set; }
@@ -16,9 +27,10 @@ namespace Assignment5
 
         static void Main(string[] args)
         {
+            
             Program student = new Program();
-            bool reservationmenu = true;
-            while (reservationmenu)
+            bool menu = true;
+            while (menu)
             {
                 // show options in the console menu
                 Console.WriteLine(" Please make your reservation");
@@ -31,6 +43,7 @@ namespace Assignment5
                     case "1": // The "1" neumeric key selects displaygrades
                         Console.WriteLine("please enter name of file to load");
                         string filename = Console.ReadLine();
+                        Console.WriteLine();
                         if (filename == "grade.txt")
                         {
                             string gradefile = "..\\..\\grade.txt";
@@ -65,27 +78,12 @@ namespace Assignment5
                         Console.WriteLine();
                         break;
                     case "2": // The "3" numeric Key to Exit the menu
-                        reservationmenu = false;
+                        menu = false;
                         break;
                     default:
                         Console.Clear();
                         break;
                 }
-
-
-                try
-                {
-
-                }
-
-
-
-                catch (Exception exception)
-                {
-                    Console.WriteLine("error: " + exception.Message);
-                }
-
-
             }
         }
     }
