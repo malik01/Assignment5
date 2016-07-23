@@ -38,6 +38,8 @@ namespace Assignment5
                     student.idClass = fields[2];
                     student.grade = fields[3];
 
+                    Console.WriteLine("{0},{1},{2},{3}",student.lastname,student.firstname,student.idClass,student.grade);
+
                         recordFromfile = filereader.ReadLine();
                     }
                 filereader.Close();
